@@ -216,14 +216,14 @@ x = (screen_width - window_width) // 2
 y = (screen_height - window_height) // 2
 root.geometry(f"{window_width}x{window_height}+{x}+{y}")
 
-first_frame = tk.Frame(root, bg="#920303")
+first_frame = tk.Frame(root, bg="Blue")
 first_frame.grid(row=0, column=0, rowspan=12, columnspan=12, sticky="nsew")
 for i in range(12):
     first_frame.rowconfigure(i, minsize=50)
 for i in range(12):
     first_frame.columnconfigure(i, minsize=70)
 
-project_text = ttk.Label(first_frame, text="Web Enumeration Tool", font=("Anton", 50, "bold"), foreground="#000000", background="#920303")
+project_text = ttk.Label(first_frame, text="Web Enumeration Tool", font=("Anton", 50, "bold"), foreground="Green", background="#920303")
 project_text.grid(row=2, column=2, columnspan=3, pady=20, padx=40)
 
 login_button = tk.Button(first_frame, text="Login as Admin", command=run_admin_program, font=("Helvetica", 13), 
